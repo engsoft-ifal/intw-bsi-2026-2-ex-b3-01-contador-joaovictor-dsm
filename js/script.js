@@ -8,3 +8,21 @@
 //       elemento.textContent = valor.
 
 // escreva seu código aqui
+
+const total = document.querySelector("#total");
+const btnSomar = document.querySelector("#somar");
+const btnZerar = document.querySelector("#zerar");
+
+var contador = 0;
+total.textContent = contador;
+
+btnSomar.addEventListener("click", function() {
+  contador = contador + 1;
+  total.textContent = contador;
+  console.log(contador);
+});
+
+btnZerar.addEventListener("click", function() {
+  contador = 0;
+  total.textContent = contador;
+});
